@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+body{
+    background:url("./images/background2.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    color:white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    min-height:100vh;
+}
+:root{
+    --primary-color:white;
+    --secondary-color:red;
+    --off-white:#F3F4F6;
+    --black:black;
+    --green:green;
+}
+*{
+    box-sizing:border-box;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+/* container */
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    max-width:400px;
+    flex-wrap:wrap;
+}
+
+.box{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background-color:var(--off-white);
+    color:var(--black);
+    margin:0.5rem;
+    width:130px;
+    height:130px;
+    padding:1rem;
+    text-align:center;
+}
+
+/* area */
+.formulaChoiceForm{
+    text-align:left;
+}
+
+.radio{
+    margin-bottom:1rem;
+}
+
+.areaCalcBlock{
+    display:none;
+}
+
+
+
+/* hypo */
+
+.section{
+    width:100%;
+    max-width:600px;
+    text-align:center;
+    margin:4rem auto;
+}
+
+.triangle{
+    position:relative;
+    width:104px;
+    height:104px;
+    margin:50px auto 40px;
+}
+
+
+
+.triangle .line1{
+    width:100px;
+    bottom:-102px;
+}
+.triangle .line2{
+    width:100px;
+    transform:rotate(90deg);
+    bottom:-50px;
+    left:-50px;
+}
+.triangle .line3{
+    width:140px;
+    transform:rotate(45deg);
+    top:47px;
+    left:-21px;
+}
+.triangle .line4{
+    width:72px;
+    transform:rotate(-45deg);
+    left:-11px;
+    top:71px;
+}
+.triangle .line5{
+    width:12px;
+    transform:rotate(45deg);
+    left:41px;
+    top:55px;
+}
+.triangle .line6{
+    width:10px;
+    transform:rotate(-45deg);
+    left:49px;
+    top:54px;
+}
+.triangle div{
+    height:2px;
+    background-color:var(--primary-color);
+}
+.line{
+    position:relative;
+    bottom:-100px;
+}
+
+.triangle .label{
+    position:absolute;
+}
+.sideA{
+    left:-15px;
+    top:45px;
+}
+.sideB{
+    left:45px;
+    top:105px;
+}
+.sideC{
+    top:35px;
+    left:50px;
+}
+
+.heightH{
+    top:75px;
+    left:25px;
+}
+
+.angleA{
+    top:88px;
+    left:75px;
+}
+
+/* form HYP */
+.label{
+    display:inline-block;
+    font-size:1rem;
+}
+.inputBox{
+    padding:1rem;
+    margin:1rem 1rem 1.5rem 0.2rem;
+    height:50px;
+    width:90px;
+    overflow: scroll;
+}
+
+button{
+    display:block;
+    font-size:1rem;
+    padding:0.7rem 1rem;
+    margin:0 auto 1.5rem;
+    font-family:inherit;
+}
+
+.output{
+    width:fit-content;
+    height:auto;
+    padding:1rem;
+    margin:auto;
+    background-color:var(--secondary-color);
+    font-size:1.2rem;
+}
+
+/*quiz*/
+.quiz-qus{
+    text-align:left;
+    background-color:var(--off-white);
+    padding:0.2rem 0.6rem 1rem;
+    color:var(--black);
+    margin-bottom:1rem;
+}
+.quiz-qus p,label,input{
+    cursor:pointer;
+}
+
+
+/*rightAns*/
+.rightAnsTick{
+    position:absolute;
+    left:65%; 
+    color:var(--green); 
+    font-size:28px; 
+    display:none;
+}
+.wrongAnsTick{
+    position:absolute;
+    left:65%; 
+    color:var(--secondary-color); 
+    font-size:28px; 
+    display:none;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    font-size:30px;
+    margin-left:-40px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    display:inline;
+    margin-left:20px;
+    color:var(--off-white)
+}
