@@ -37,7 +37,7 @@ document.forms[1].addEventListener("submit",(e)=>{
     e.preventDefault();
     const base=Number(inputInOption1[0].value);
     const height=Number(inputInOption1[1].value);
-    const area=base*height;
+    const area=1/2*base*height;
     outputs[0].innerText="Area ="+area;
 });
 document.forms[2].addEventListener("submit",(e)=>{
